@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Yara — Applied AI Engineer</title>
+  <meta name="description" content="Meet Yara Alotaibi — the story, the mindset, and the path behind an Applied AI Engineer.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="lang-en">
+
+  <!-- NAVIGATION  -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="8" r="3" fill="#4E7FFF"/>
+          <circle cx="8" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="32" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="20" cy="34" r="3" fill="#4E7FFF"/>
+          <path d="M20 8L8 24M20 8L32 24M8 24L20 34M32 24L20 34M20 8L20 34" stroke="#8B9EFF" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <span>Yara Alotaibi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="about.html" class="active"><span class="lang-en">About</span><span class="lang-ar">نبذة</span></a></li>
+        <li><a href="experience.html"><span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span></a></li>
+        <li><a href="education.html"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+        <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث</span></a></li>
+        <li><a href="certifications.html"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+        <li><a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ar">AR</button>
+        </div>
+        <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================================================================
+       IDENTITY HERO 
+       ===================================================================== -->
+  <header class="hero">
+    <!-- two connected neuron cells  -->
+    <div class="container">
+      <div class="identity-layout">
+      <canvas id="identity-canvas" data-neuro data-shape="neuron"></canvas>
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="lang-en">About</span>
+          <span class="lang-ar">نبذة</span>
+        </span>
+
+        <!--page title -->
+        <h1>
+          <span class="lang-en">Meet <span class="accent">Yara</span></span>
+          <span class="lang-ar">تعرف على <span class="accent">يارا</span></span>
+        </h1>
+
+        <!-- personal narrative -->
+        <p class="sub" style="max-width:640px;">
+          <span class="lang-en">
+          I’m Yara Alotaibi, an Applied AI Engineer with a Computer Science background, based in Saudi Arabia. 
+          I design and build end-to-end AI systems that move beyond research prototypes and into real-world production environments. My work spans machine learning, deep learning, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and MLOps ranging from publishing research as a first author in IEEE to developing production-ready RAG systems during an industry capstone with Beam Data. 
+          What interests me most is the gap between a model that works in theory and a system that works for an user. I focus on bridging these gaps, designing practical methodologies, improving retrieval grounding, and building reproducible pipelines that make AI reliable and maintainable.
+          </span>
+          <span class="lang-ar">
+           أنا يارا العتيبي، مهندسة ذكاء اصطناعي تطبيقي خريجة بكالوريس علوم الحاسب، وأقيم في السعودية. أعمل على تصميم وبناء أنظمة ذكاء اصطناعي متكاملة تتجاوز مرحلة النماذج التجريبية لتصل إلى بيئات الإنتاج الفعلية.
+يمتد عملي عبر مجالات التعلّم الآلي، التعلّم العميق، النماذج اللغوية الضخمة (LLMs)، أنظمة الاسترجاع المعزّز (RAG)، وعمليات الـ MLOps  بدءًا من بحث منشور كمؤلف أول في IEEE وصولًا إلى تطوير أنظمة RAG جاهزة للإنتاج خلال مشروع مع شركة Beam Data.
+ينصب شغفي المهني على سد الفجوة بين النماذج النظرية والأنظمة الواقعية التي تخدم المستخدم وذلك من خلال تصميم منهجيات عملية، وتحسين استرجاع المعلومات بدقة، وبناء خطوط معالجة قابلة للتكرار (Pipelines) تضمن موثوقية الأنظمة وقابليتها للصيانة.
+          </span>
+        </p>
+
+        <p class="sub" style="max-width:640px;">
+          <span class="lang-en">
+            For me, a successful AI system isn’t defined only by performance metrics, it’s defined by stability, clarity, and honesty about its limits. That’s the kind of engineer I’m continuously working to become.
+          </span>
+          <span class="lang-ar">
+         بالنسبة لي، لا يُقاس نجاح نظام الذكاء الاصطناعي بكفاءة النموذج فحسب، بل باستقراره، وشفافيته، وموثوقية مخرجاته في حدود قدراته؛ وهذا هو الطابع الهندسي الذي أسعى دائماً لتمثيله وتطويره.
+          </span>
+        </p>
+
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">
+            <span class="lang-en">See my work</span>
+            <span class="lang-ar">شاهدي أعمالي</span>
+          </a>
+          <a href="contact.html" class="btn btn-ghost">
+            <span class="lang-en">Get in touch</span>
+            <span class="lang-ar">تواصلي معي</span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="lang-en">© 2026 Yara Alotaibi — Applied AI Engineer.</p>
+      <p class="lang-ar">© 2026 يارا العتيبي — مهندسة ذكاء اصطناعي تطبيقي.</p>
+    </div>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+</body>
+</html>

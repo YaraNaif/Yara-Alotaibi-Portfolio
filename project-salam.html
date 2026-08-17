@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALAM — AI Legal Assistant | Yara Alotaibi</title>
+  <meta name="description" content="SALAM: a bilingual RAG legal assistant for Saudi Labor Law, built with Qwen2.5-7B, FAISS, FastAPI, and Docker.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .btn:visited{ color: inherit; }
+</style>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="lang-en">
+
+  <!-- NAVIGATION  -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="8" r="3" fill="#4E7FFF"/>
+          <circle cx="8" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="32" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="20" cy="34" r="3" fill="#4E7FFF"/>
+          <path d="M20 8L8 24M20 8L32 24M8 24L20 34M32 24L20 34M20 8L20 34" stroke="#8B9EFF" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <span>Yara Alotaibi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-ar">نبذة</span></a></li>
+        <li><a href="experience.html"><span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span></a></li>
+        <li><a href="education.html"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+        <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث</span></a></li>
+        <li><a href="certifications.html"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+        <li><a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ar">AR</button>
+        </div>
+        <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow lang-en">Generative AI Bootcamp Capstone</span>
+      <span class="eyebrow lang-ar">مشروع تخرج معسكر الذكاء الاصطناعي التوليدي</span>
+      <h1>SALAM — <span class="lang-en">AI Legal Assistant for Saudi Labor Law</span><span class="lang-ar">مساعد ذكاء اصطناعي لنظام العمل السعودي</span></h1>
+      <p>
+        <span class="lang-en">Beam Data &amp; Saudi Digital Academy, Remote &middot; Aug 2025 &ndash; Nov 2025</span>
+        <span class="lang-ar">Beam Data والأكاديمية السعودية الرقمية، عن بُعد &middot; أغسطس ٢٠٢٥ &ndash; نوفمبر ٢٠٢٥</span>
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="max-width:820px;">
+
+      <!-- OVERVIEW -->
+      <p class="lang-en block" data-animate style="color:var(--text-dim); font-size:1rem;">
+        Designed and developed an end-to-end bilingual AI legal assistant that retrieves and explains Saudi Labor Law using Retrieval-Augmented Generation (RAG). The system combines semantic retrieval, reranking, and grounded generation to provide accurate answers with relevant legal article citations in Arabic and English.</p>
+      </p>
+      <p class="lang-ar block" data-animate style="color:var(--text-dim); font-size:1rem;">
+       صممت وطورت مساعدًا قانونيًا ذكيًا ثنائي اللغة يعتمد على تقنية RAG لاسترجاع مواد نظام العمل السعودي وشرحها. يجمع النظام بين الاسترجاع الدلالي، وإعادة ترتيب النتائج، والتوليد الموثق لتقديم إجابات دقيقة مدعومة بمواد نظام العمل باللغتين العربية والإنجليزية.      </p>
+
+      <!-- METRICS  -->
+      <div class="stat-grid" data-animate>
+        <div class="stat-item">
+          <span class="num">95.65%</span>
+          <span class="label lang-en">Retrieval recall</span>
+          <span class="label lang-ar">استدعاء الاسترجاع (Recall)</span>
+        </div>
+        <div class="stat-item">
+          <span class="num">83.02%</span>
+          <span class="label lang-en">F1 score</span>
+          <span class="label lang-ar">درجة F1</span>
+        </div>
+        <div class="stat-item">
+          <span class="num">73.33%</span>
+          <span class="label lang-en">Precision</span>
+          <span class="label lang-ar">الإحكام أو الدقة النوعية </span>
+        </div>
+        <div class="stat-item">
+          <span class="num">70.9%</span>
+          <span class="label lang-en">Responses with correct citation</span>
+          <span class="label lang-ar"> الردود ذات الاستشهاد القانوني الصحيح</span>
+        </div>
+      </div>
+<!-- ARCHITECTURE built -->
+
+<div class="timeline" style="margin-top:20px;">
+  <div class="timeline-item" data-animate>
+    <h3 style="font-family:var(--font-display-en);" class="lang-en">How it's built</h3>
+    <h3 style="font-family:var(--font-ar);" class="lang-ar">كيف تم بناؤه</h3>
+
+    <ul style="margin-top:18px;">
+      <li class="lang-en block">Parses the Saudi Labor Law PDF, extracts structured articles, generates BGE-M3 embeddings, and indexes them with FAISS for semantic retrieval.</li>
+      <li class="lang-en block">Runs a bilingual RAG pipeline using Qwen2.5-7B, semantic search, and Cross-Encoder reranking to improve retrieval precision.</li>
+      <li class="lang-en block">Built a FastAPI backend exposing a unified API endpoint with structured JSON responses and legal article citations for Arabic and English queries.</li>
+      <li class="lang-en block">Containerized the complete system using Docker, separating retrieval, embedding generation, and inference services for scalability and maintainability.</li>
+
+      <li class="lang-ar block">يعالج ملف نظام العمل السعودي بصيغة PDF، يستخرج المواد القانونية، وينشئ تمثيلات BGE-M3، ثم يفهرسها باستخدام FAISS للاسترجاع الدلالي.</li>
+      <li class="lang-ar block">يشغّل خط RAG ثنائي اللغة باستخدام Qwen2.5-7B والاسترجاع الدلالي وإعادة ترتيب النتائج عبر Cross-Encoder لتحسين دقة الاسترجاع.</li>
+      <li class="lang-ar block">يوفر endpoint موحد مبني بـ FastAPI يعيد استجابات JSON منظمة مع استشهادات بالمواد القانونية للاستفسارات بالعربية والإنجليزية.</li>
+      <li class="lang-ar block">محزّم بالكامل عبر Docker، مع فصل خدمات الاسترجاع وتوليد التمثيلات والاستدلال لتحقيق قابلية التوسع وسهولة الصيانة.</li>
+    </ul>
+  </div>
+</div>
+
+      <!-- =====================================================================
+     DEMO VIDEO 
+     ===================================================================== -->
+<h3 style="font-family:var(--font-display-en); margin:40px 0 16px;" class="lang-en">Demo</h3>
+<h3 style="font-family:var(--font-ar); margin:40px 0 16px;" class="lang-ar">عرض توضيحي</h3>
+
+<div class="card" data-animate style="padding:0; overflow:hidden; margin-top:24px;">
+  <video controls style="width:100%; display:block; background:#000;">
+    <source src="assets/demo/SALAM%20Demo.mp4" type="video/mp4">
+    <span class="lang-en">Your browser doesn't support embedded video — </span>
+    <span class="lang-ar">متصفحك لا يدعم عرض الفيديو المضمّن — </span>
+    <a href="assets/demo/SALAM%20Demo.mp4">
+      <span class="lang-en">download it here</span>
+      <span class="lang-ar">حمّل من هنا</span>
+    </a>
+  </video>
+</div>
+
+<div class="text-center mt-40">
+  <a href="https://drive.google.com/drive/folders/1V0l2vPx6QaUo8L-heRQ4qgaA-FkYCDdv?usp=sharing"
+     target="_blank" rel="noopener" class="btn btn-ghost">
+    <span class="lang-en">View project files on Drive</span>
+    <span class="lang-ar">شاهد ملفات المشروع على Drive</span>
+  </a>
+</div>
+
+      <div class="mt-40 text-center">
+        
+        <a href="https://github.com/YaraNaif/SALAM-Saudi-Labor-Law-Assistant"
+           target="_blank" rel="noopener" class="btn btn-primary">
+          <span class="lang-en">View project on GitHub</span>
+          <span class="lang-ar">عرض المشروع على GitHub</span>
+        </a>
+        <!-- Back to projects -->
+        <a href="projects.html" class="btn btn-ghost">
+          <span class="lang-en">&larr; Back to Projects</span>
+          <span class="lang-ar">العودة للمشاريع &rarr;</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="lang-en">© 2026 Yara Alotaibi — Applied AI Engineer.</p>
+      <p class="lang-ar">© 2026 يارا العتيبي — مهندسة ذكاء اصطناعي تطبيقي.</p>
+    </div>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+  

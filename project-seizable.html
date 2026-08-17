@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seizable — EEG Seizure Prediction | Yara Alotaibi</title>
+  <meta name="description" content="Seizable: a hybrid CNN-TCN deep learning system for epileptic seizure prediction from EEG signals, 99.49% accuracy, published in IEEE AMLDS 2025.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="lang-en">
+
+  <!-- NAVIGATION  -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="8" r="3" fill="#4E7FFF"/>
+          <circle cx="8" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="32" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="20" cy="34" r="3" fill="#4E7FFF"/>
+          <path d="M20 8L8 24M20 8L32 24M8 24L20 34M32 24L20 34M20 8L20 34" stroke="#8B9EFF" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <span>Yara Alotaibi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-ar">نبذة</span></a></li>
+        <li><a href="experience.html"><span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span></a></li>
+        <li><a href="education.html"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+        <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث</span></a></li>
+        <li><a href="certifications.html"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+        <li><a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ar">AR</button>
+        </div>
+        <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow lang-en">University Graduation Project &middot; IEEE Publication</span>
+      <span class="eyebrow lang-ar">مشروع التخرج الجامعي &middot; بحث منشور في IEEE</span>
+      <h1>Seizable — <span class="lang-en"> epileptic seizure prediction System using  EEG Data </span><span class="lang-ar">نظام التنبؤ بنوبات الصرع باستخدام بيانات EEG</span></h1>
+      <p>
+        <span class="lang-en">Umm Al-Qura University, Makkah &middot; May 2025 &middot; 1st Place, UQU Entrepreneurial Projects Exhibition 2025</span>
+        <span class="lang-ar">جامعة أم القرى، مكة المكرمة &middot; مايو ٢٠٢٥ &middot; المركز الأول، معرض المشاريع الريادية بجامعة أم القرى ٢٠٢٥</span>
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="max-width:820px;">
+
+      <!-- OVERVIEW -->
+      <p class="lang-en block" data-animate style="color:var(--text-dim); font-size:1rem;">
+        Led the design and development of an end-to-end AI system for epileptic seizure prediction using multichannel EEG signals, combining deep learning, signal processing, and web deployment.
+      </p>
+      <p class="lang-ar block" data-animate style="color:var(--text-dim); font-size:1rem;">
+        قدت تصميم وتطوير نظام ذكاء اصطناعي متكامل للتنبؤ بنوبات الصرع باستخدام إشارات EEG متعددة القنوات، جامع بين التعلم العميق ومعالجة الإشارات والنشر عبر الويب.
+      </p>
+
+      <!-- METRICS -->
+      <div class="stat-grid" data-animate>
+        <div class="stat-item">
+          <span class="num">99.49%</span>
+          <span class="label lang-en">Accuracy</span>
+          <span class="label lang-ar">الدقة</span>
+        </div>
+        <div class="stat-item">
+          <span class="num">1.00</span>
+          <span class="label lang-en">AUC</span>
+          <span class="label lang-ar">AUC</span>
+        </div>
+        <div class="stat-item">
+          <span class="num">10-fold</span>
+          <span class="label lang-en">Cross-validation</span>
+          <span class="label lang-ar">التحقق المتقاطع</span>
+        </div>
+        <div class="stat-item">
+          <span class="num">🥇 1st</span>
+          <span class="label lang-en">UQU Exhibition 2025</span>
+          <span class="label lang-ar">معرض جامعة أم القرى ٢٠٢٥</span>
+        </div>
+      </div>
+
+       
+<!-- ============ System Architecture ============ -->
+<div class="timeline" style="margin-top:20px;">
+  <div class="timeline-item" data-animate>
+    <h3 class="lang-en" style="font-family:var(--font-display-en);">System Architecture</h3>
+    <h3 class="lang-ar" style="font-family:var(--font-ar);">معمارية النظام</h3>
+
+    <ul style="margin-top:18px;">
+      <li class="lang-en block">Built on the CHB-MIT Scalp EEG Database 23 pediatric patients, 198 documented seizures with unified temporal annotations and binary seizure labeling.</li>
+      <li class="lang-en block">Combines a CNN block, capturing localized spatial patterns across EEG channels, with a TCN block, capturing the sequential temporal dependencies between them.</li>
+      <li class="lang-en block">Trained and validated with 10-fold cross-validation, optimized with binary cross-entropy loss and a sigmoid output for seizure probability.</li>
+      <li class="lang-en block">Reached 99.49% accuracy and a perfect ROC-AUC score, outperforming CNN (98.14%), LSTM-TCN (93.57%), and LSTM (88.83%) baselines.</li>
+      <li class="lang-en block">Includes an interactive Streamlit dashboard for clinicians to monitor patients and review EEG signals per electrode.</li>
+
+      <li class="lang-ar block">مبني على قاعدة بيانات CHB-MIT Scalp EEG — ٢٣ مريضًا من الأطفال، ١٩٨ نوبة موثّقة — مع تسميات زمنية موحّدة وتصنيف ثنائي للنوبات.</li>
+      <li class="lang-ar block">يجمع بين كتلة CNN، اللي تلتقط الأنماط المكانية المحلية عبر قنوات EEG، وكتلة TCN، اللي تلتقط الاعتمادية الزمنية المتسلسلة بينها.</li>
+      <li class="lang-ar block">تدرّب وتحقق منه بتحقق متقاطع ١٠ طيات، وحُسّن بدالة خسارة الإنتروبيا المتقاطعة الثنائية وطبقة إخراج sigmoid لاحتمالية النوبة.</li>
+      <li class="lang-ar block">وصل لدقة ٩٩.٤٩٪ ودرجة ROC-AUC مثالية، متفوقًا على نماذج CNN (٩٨.١٤٪) وLSTM-TCN (٩٣.٥٧٪) وLSTM (٨٨.٨٣٪).</li>
+      <li class="lang-ar block">يشمل لوحة Streamlit تفاعلية تتيح للأطباء متابعة المرضى ومراجعة إشارات EEG لكل قطب.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ My role ============ -->
+<div class="timeline" style="margin-top:20px;">
+  <div class="timeline-item" data-animate>
+    <h3 class="lang-en" style="font-family:var(--font-display-en);">My role</h3>
+    <h3 class="lang-ar" style="font-family:var(--font-ar);">دوري بالمشروع</h3>
+
+    <ul style="margin-top:18px;">
+      <li class="lang-en block">Implemented and tuned the CNN-TCN architecture proposed by the project supervisor, adding layers and adjusting regularization and convolution settings to improve performance.</li>
+      <li class="lang-en block">Structured the project into specialized workstreams data preprocessing, hyperparameter optimization, results benchmarking, overfitting validation, and backend/web development and led a team by assigning ownership, setting milestones, and integrating outputs across the pipeline.</li>
+      <li class="lang-en block">Independently engineered the signal-processing core: converting raw EEG ADU values to voltage and frequency domain, and building the clinical-style Montage EEG visualization layer with Plotly and PyEDFlib.</li>
+      <li class="lang-en block">Developed the interactive prediction platform integrating Flask, MySQL, and the deep-learning inference pipeline.</li>
+
+      <li class="lang-ar block">طبّقت وضبطت معمارية CNN-TCN التي تم اقتراحها من قبل مشرفة المشروع، بإضافة طبقات وتعديل إعدادات التنظيم والالتفاف لتحسين الأداء.</li>
+      <li class="lang-ar block">نظّمت المشروع في مسارات عمل متخصصة  معالجة أولية للبيانات، ضبط المعاملات الفائقة، قياس النتائج، التحقق من الإفراط في التخصيص، وتطوير الواجهة الخلفية والويب وقدت الفريق عبر توزيع المسؤوليات وتحديد المعالم ودمج المخرجات.</li>
+      <li class="lang-ar block">هندست بشكل مستقل نواة معالجة الإشارة: تحويل قيم EEG الخام (ADU) إلى الجهد ومجال التردد، وبناء طبقة العرض المرئي لموجات EEG بأسلوب سريري طبي Montage باستخدام Plotly , PyEDFlib.</li>
+      <li class="lang-ar block">طورت منصة التنبؤ التفاعلية بدمج Flask وMySQL وخط استدلال التعلم العميق.</li>
+    </ul>
+  </div>
+</div>
+
+      <!-- =====================================================================
+           Demo Video
+           ===================================================================== -->
+      
+           <h3 style="font-family:var(--font-display-en); margin:40px 0 16px;" class="lang-en">Demo</h3>
+<h3 style="font-family:var(--font-ar); margin:40px 0 16px;" class="lang-ar">عرض توضيحي</h3>
+
+<div class="card" data-animate style="padding:0; overflow:hidden; margin-top:24px;">
+  <video controls style="width:100%; display:block; background:#000;">
+    <source src="assets/demo/Seizable%20Demo.mp4" type="video/mp4">
+    <span class="lang-en">Your browser doesn't support embedded video — </span>
+    <span class="lang-ar">متصفحك لا يدعم عرض الفيديو المضمّن — </span>
+    <a href="assets/demo/Seizable%20Demo.mp4">
+      <span class="lang-en">download it here</span>
+      <span class="lang-ar">حمّل من هنا</span>
+    </a>
+  </video>
+</div>
+
+
+      <div class="text-center mt-40">
+  <a href="https://drive.google.com/file/d/18kyVRlnsi_bg-5gzdAcxEicGRTarjNyc/view?usp=sharing"
+     target="_blank" rel="noopener" class="btn btn-ghost">
+    <span class="lang-en">View project files on Drive</span>
+    <span class="lang-ar">شاهد ملفات المشروع على Drive</span>
+  </a>
+</div>
+
+      <div class="mt-40 text-center">
+        
+        <a href="publications.html" class="btn btn-primary">
+  <span class="lang-en">Read the published research</span>
+  <span class="lang-ar">اقرأ البحث المنشور</span>
+</a>
+
+        <!-- back -->
+        <a href="projects.html" class="btn btn-ghost">
+          <span class="lang-en">&larr; Back to Projects</span>
+          <span class="lang-ar">العودة للمشاريع &rarr;</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="lang-en">© 2026 Yara Alotaibi — Applied AI Engineer.</p>
+      <p class="lang-ar">© 2026 يارا العتيبي — مهندسة ذكاء اصطناعي تطبيقي.</p>
+    </div>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

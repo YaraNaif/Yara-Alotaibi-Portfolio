@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Yara Alotaibi</title>
+  <meta name="description" content="Hybrid CNN-TCN Modeling of EEG Temporal Signals for Epileptic Seizure Prediction — IEEE AMLDS 2025, Tokyo.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="lang-en">
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="8" r="3" fill="#4E7FFF"/>
+          <circle cx="8" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="32" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="20" cy="34" r="3" fill="#4E7FFF"/>
+          <path d="M20 8L8 24M20 8L32 24M8 24L20 34M32 24L20 34M20 8L20 34" stroke="#8B9EFF" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <span>Yara Alotaibi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-ar">نبذة</span></a></li>
+        <li><a href="experience.html"><span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span></a></li>
+        <li><a href="education.html"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+        <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+        <li><a href="publications.html" class="active"><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث</span></a></li>
+        <li><a href="certifications.html"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+        <li><a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ar">AR</button>
+        </div>
+        <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow lang-en">Research</span>
+      <span class="eyebrow lang-ar">البحث العلمي</span>
+      <h1><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث المنشورة</span></h1>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       PUBLICATION CARD
+       ===================================================================== -->
+
+   <section class="section">
+    <div class="container">
+      <div class="pub-zigzag">
+
+        <!-- ============ card 1: the paper  ============ -->
+        <div class="zigzag-item" data-animate>
+          <span class="dot"></span>
+          <div class="card pub-card">
+
+            <h3>Hybrid CNN-TCN Modeling of EEG Temporal Signals for Epileptic Seizure Prediction</h3>
+            <span class="meta">IEEE AMLDS 2025 &middot; Tokyo &middot; Jul 2025</span>
+
+            <!--img. -->
+            <div class="media-placeholder" style="margin:18px 0;">
+              <img src="assets/publications/ieee-paper-cover.png" alt="IEEE AMLDS 2025 conference paper cover page titled Hybrid CNN-TCN Modeling of EEG Temporal Signals for Epileptic Seizure Prediction, presented in Tokyo, July 2025, authored by Yara Alotaibi" style="width:100%;">
+            </div>
+
+          
+            <!-- abstract -->
+            <p class="abstract lang-en block">
+              Most prior work on EEG seizure prediction either models the spatial relationships between electrode channels or the temporal patterns within the signal, rarely both at once. This paper proposes a hybrid CNN-TCN architecture that closes the gap by combining the two: convolutional layers capture patterns across EEG channels, while temporal convolutional layers track how those patterns evolve. Tested against CNN, LSTM, and LSTM-TCN baselines on the CHB-MIT dataset, the hybrid model reached 99.49% accuracy and a perfect AUC of 1.00 under 10-fold cross-validation.
+            </p>
+            <p class="abstract lang-ar block">
+              معظم الدراسات السابقة حول التنبؤ بنوبات الصرع باستخدام تخطيط كهربية الدماغ (EEG) تركز إما على نمذجة العلاقات المكانية بين قنوات الأقطاب الكهربائية أو الأنماط الزمنية داخل الإشارة، ونادرًا ما تجمع بينهما. تقترح هذه الورقة البحثية بنية هجينة تجمع بين الشبكات العصبية الالتفافية (CNN) والشبكات العصبية الزمنية الالتفافية (TCN) لسد هذه الفجوة: حيث تقوم الطبقات الالتفافية بالتقاط الأنماط عبر قنوات تخطيط كهربية الدماغ، بينما تتعقب الطبقات الزمنية الالتفافية كيفية تطور هذه الأنماط. عند اختبار النموذج الهجين على مجموعة بيانات CHB-MIT ومقارنته بنماذج CNN وLSTM وLSTM-TCN الأساسية، حقق دقة بلغت 99.49% ومساحة مثالية تحت المنحنى (AUC) قدرها 1.00 باستخدام التحقق المتقاطع بعشر طيات.
+            </p>
+
+            <a href="https://ieeexplore.ieee.org/document/11159432" target="_blank" rel="noopener" class="btn btn-primary">
+              <span class="lang-en">Read the full paper (IEEE Xplore)</span>
+              <span class="lang-ar">اقرأ البحث كاملاً (IEEE Xplore)</span>
+            </a>
+
+            
+          </div>
+        </div>
+
+        <!-- ============ card 2: from the conference ============ -->
+        <div class="zigzag-item" data-animate>
+          <span class="dot"></span>
+          <div class="card pub-card">
+            <h3>
+              <span class="lang-en">From the Conference</span>
+              <span class="lang-ar">من المؤتمر</span>
+            </h3>
+            <span class="meta">
+              <span class="lang-en">Presented via Webex &middot; IEEE AMLDS 2025, Tokyo</span>
+              <span class="lang-ar">قُدّم عبر Webex &middot; مؤتمر IEEE AMLDS 2025، طوكيو</span>
+            </span>
+
+            <!-- img  -->
+            <div class="media-placeholder" style="margin:18px 0;">
+            <img src="assets/publications/Group.webp" alt="Research team presenting the paper remotely via Webex at IEEE AMLDS 2025" style="width:100%;">            </div>
+
+            <p style="font-size:0.85rem; color:var(--text-dim);">
+            </p>
+          </div>
+        </div>
+
+        <!-- ============ card 3: from the presentation ============ -->
+        <div class="zigzag-item" data-animate>
+          <span class="dot"></span>
+          <div class="card pub-card">
+            <h3>
+              <span class="lang-en">from the presentation</span>
+              <span class="lang-ar">من العرض التقديمي</span>
+            </h3>
+            <span class="meta">
+              <span class="lang-en">First page &middot; IEEE AMLDS 2025, Tokyo</span>
+              <span class="lang-ar">الصفحة الأولى &middot; مؤتمر IEEE AMLDS 2025، طوكيو</span>
+            </span>
+
+            <!-- img  -->
+            <div class="media-placeholder" style="margin:18px 0;">
+            <img src="assets/publications/First-Page.png" alt="First page of the presentation at IEEE AMLDS 2025" style="width:100%;">            </div>
+
+            <p style="font-size:0.85rem; color:var(--text-dim);">
+            </p>
+          </div>
+        </div>
+
+
+          <!-- ============ card 3:closes the story loop with Seizable ============ -->
+        <div class="zigzag-item" data-animate>
+          <span class="dot"></span>
+          <div class="card pub-card">
+            <h3>
+              <span class="lang-en">Recognized with 1st Place</span>
+              <span class="lang-ar">حاز على المركز الأول</span>
+            </h3>
+            <span class="meta">
+              <span class="lang-en">UQU Entrepreneurial Projects Exhibition 2025 &middot; Makkah</span>
+              <span class="lang-ar">معرض المشاريع الريادية بجامعة أم القرى ٢٠٢٥ &middot; مكة المكرمة</span>
+            </span>
+
+            <p style="font-size:0.85rem; color:var(--text-dim); margin-top:16px;">
+              <span class="lang-en"> Seizable system behind this paper placed 1st at Umm Al-Qura University's entrepreneurial exhibition see the full project write-up for the engineering side of this research.</span>
+              <span class="lang-ar"> نظام Seizable وراء هذا البحث حصل على المركز الأول بمعرض جامعة أم القرى الريادي اذهب للصفحة المشروع لرؤية الجانب الهندسي الكامل من البحث.</span>
+            </p>
+
+            <a href="project-seizable.html" class="btn btn-ghost mt-40">
+              <span class="lang-en">View the Seizable project &rarr;</span>
+              <span class="lang-ar">شاهد مشروع Seizable &larr;</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="lang-en">© 2026 Yara Alotaibi — Applied AI Engineer.</p>
+      <p class="lang-ar">© 2026 يارا العتيبي — مهندسة ذكاء اصطناعي تطبيقي.</p>
+    </div>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

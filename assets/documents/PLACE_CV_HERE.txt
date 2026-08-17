@@ -1,0 +1,8 @@
+Put your CV PDF in this folder, named exactly:
+
+    Yara_Alotaibi_CV.pdf
+
+index.html's "Download CV" button already links to:
+    assets/documents/Yara_Alotaibi_CV.pdf
+
+Once the real file is here, delete this placeholder text file.

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications — Yara Alotaibi</title>
+  <meta name="description" content="AiE® certification, KAUST Academy AI training, and Tuwaiq Academy full-stack development.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="lang-en">
+
+  <!-- NAVIGATION  -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="8" r="3" fill="#4E7FFF"/>
+          <circle cx="8" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="32" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="20" cy="34" r="3" fill="#4E7FFF"/>
+          <path d="M20 8L8 24M20 8L32 24M8 24L20 34M32 24L20 34M20 8L20 34" stroke="#8B9EFF" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <span>Yara Alotaibi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-ar">نبذة</span></a></li>
+        <li><a href="experience.html"><span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span></a></li>
+        <li><a href="education.html"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+        <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث</span></a></li>
+        <li><a href="certifications.html" class="active"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+        <li><a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ar">AR</button>
+        </div>
+        <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow lang-en">Credentials</span>
+      <span class="eyebrow lang-ar">الاعتمادات</span>
+      <h1><span class="lang-en">Licenses &amp; Certifications</span><span class="lang-ar">الرخص والشهادات</span></h1>
+      <p>
+        
+      </p>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       CERTIFICATIONS — a single 3D coverflow carousel with all 6 credentials.
+       ===================================================================== -->
+  <section class="section">
+    <div class="cert-carousel" id="certCarousel">
+      <div class="cert-stage" id="certStage">
+        <div class="cert-track" id="certTrack"></div>
+      </div>
+
+      <div class="cert-caption" id="certCaption"></div>
+
+      <div class="cert-nav">
+        <button type="button" class="cert-arrow" id="certPrev" aria-label="Previous certificate">&larr;</button>
+        <div class="cert-dots" id="certDots"></div>
+        <button type="button" class="cert-arrow" id="certNext" aria-label="Next certificate">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="lang-en">© 2026 Yara Alotaibi — Applied AI Engineer.</p>
+      <p class="lang-ar">© 2026 يارا العتيبي — مهندسة ذكاء اصطناعي تطبيقي.</p>
+    </div>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    //  only place certificate content lives. 
+    const CERTS = [
+      {
+        img: "assets/certifications/AiE.png",
+        titleEn: "Artificial Intelligence Engineer (AiE®)",
+        titleAr: "مهندسة ذكاء اصطناعي (AiE®)",
+        captionEn: "Artificial Intelligence Board of America · Issued Jun 2026",
+        captionAr: "البورد الأمريكي للذكاء الاصطناعي · يونيو ٢٠٢٦",
+        link: "https://www.credbadge.com/credit/certified/9609480435/",
+      },
+      {
+        img: "assets/certifications/IEEE.jpg",
+        titleEn: "Oral Presenter — AMLDS 2025",
+        titleAr: "مقدمة البحث — مؤتمر AMLDS 2025",
+        captionEn: "IEEE Systems, Man, and Cybernetics Society · Jul 2025",
+        captionAr: "جمعية IEEE للأنظمة والإنسان والتحكم الآلي · يوليو ٢٠٢٥",
+      },
+      {
+        img: "assets/certifications/Kaust Adv.png",
+        titleEn: "Advanced AI Training",
+        titleAr: "تدريب متقدم في الذكاء الاصطناعي",
+        captionEn: "KAUST × NTDP · Mar 2025",
+        captionAr: "كاوست بالشراكة مع NTDP · مارس ٢٠٢٥",
+      },
+      {
+        img: "assets/certifications/Kaust Intro.png",
+        titleEn: "Intro AI Training",
+        titleAr: "تدريب تمهيدي في الذكاء الاصطناعي",
+        captionEn: "KAUST × NTDP · Jan 2025",
+        captionAr: "كاوست بالشراكة مع NTDP · يناير ٢٠٢٥",
+      },
+      {
+        img: "assets/certifications/Twaiq.png",
+        titleEn: "Web Development with PHP Laravel",
+        titleAr: "تطوير الويب باستخدام PHP Laravel",
+        captionEn: "Tuwaiq Academy · Apr 2024",
+        captionAr: "أكاديمية طويق · أبريل ٢٠٢٤",
+      },
+      {
+        img: "assets/certifications/Michigan.png",
+        titleEn: "Python Basics",
+        titleAr: "أساسيات لغة بايثون",
+        captionEn: "university of michigan · nov 2024",
+        captionAr: " — جامعة ميشيغان · نوفمبر 2024",
+        link: "https://www.coursera.org/account/accomplishments/verify/A27UF6WH318E",
+      },
+    ];
+
+    (function initCertCarousel() {
+      const stage = document.getElementById("certStage");
+      const track = document.getElementById("certTrack");
+      const caption = document.getElementById("certCaption");
+      const dotsBox = document.getElementById("certDots");
+      const prevBtn = document.getElementById("certPrev");
+      const nextBtn = document.getElementById("certNext");
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let active = 0;
+
+      const cardEls = CERTS.map((cert, i) => {
+        const el = document.createElement("div");
+        el.className = "cert-card-3d";
+        el.innerHTML = `<img src="${cert.img}" alt="">`;
+        el.addEventListener("click", () => {
+          if (i === active) return; // clicking the active card does nothing (caption handles opening it)
+          active = i;
+          render();
+        });
+        track.appendChild(el);
+        return el;
+      });
+
+      CERTS.forEach((_, i) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "cert-dot";
+        dot.setAttribute("aria-label", `Go to certificate ${i + 1}`);
+        dot.addEventListener("click", () => {
+          active = i;
+          render();
+        });
+        dotsBox.appendChild(dot);
+      });
+      const dotEls = Array.from(dotsBox.children);
+
+      function isArabic() {
+        return document.body.classList.contains("lang-ar");
+      }
+
+      function render() {
+        const mirror = isArabic() ? -1 : 1;
+
+        cardEls.forEach((el, i) => {
+          const offset = (i - active) * mirror;
+          const abs = Math.abs(offset);
+          el.style.transition = reduceMotion ? "none" : "transform 0.5s cubic-bezier(0.22,1,0.36,1), opacity 0.5s ease";
+          el.style.zIndex = String(100 - abs);
+
+          if (abs > 2) {
+            el.style.opacity = "0";
+            el.style.pointerEvents = "none";
+            el.style.transform = `translate(-50%,-50%) translateX(${offset * 240}px) translateZ(-400px)`;
+            return;
+          }
+
+          el.style.pointerEvents = "auto";
+          const tx = offset * 220;
+          const tz = abs * -130;
+          const rot = offset * -32;
+          const scale = 1 - abs * 0.18;
+          el.style.opacity = abs === 0 ? "1" : abs === 1 ? "0.65" : "0.32";
+          el.style.transform = `translate(-50%,-50%) translateX(${tx}px) translateZ(${tz}px) rotateY(${rot}deg) scale(${scale})`;
+          el.classList.toggle("is-active", i === active);
+        });
+
+        dotEls.forEach((d, i) => d.classList.toggle("is-active", i === active));
+        prevBtn.disabled = active === 0;
+        nextBtn.disabled = active === CERTS.length - 1;
+        // the buttons swap visual position in RTL (flex row auto-mirrors), so
+        // flip which glyph each one shows too — both should still point the
+        // way they'll actually move, not just decorate a fixed screen side
+        prevBtn.innerHTML = isArabic() ? "&rarr;" : "&larr;";
+        nextBtn.innerHTML = isArabic() ? "&larr;" : "&rarr;";
+
+        // clickable (opens the verification link) 
+        const cert = CERTS[active];
+        const title = isArabic() ? cert.titleAr : cert.titleEn;
+        const meta = isArabic() ? cert.captionAr : cert.captionEn;
+        const verifyLabel = isArabic() ? "عرض بيانات الاعتماد" : "View Credential";
+        caption.innerHTML = `
+        <strong>${title}</strong>
+        <span>${meta}</span>
+        ${cert.link ? `<a class="cert-verify" href="${cert.link}" target="_blank" rel="noopener">${verifyLabel}</a>` : ""}`;
+        }
+
+      // always steps through CERTS in the same fixed order regardless of language —
+      // only the *visual* arrangement mirrors for RTL (handled in render() above),
+      // so this stays consistent with the dots (which are never reordered either)
+      function go(delta) {
+        active = Math.min(CERTS.length - 1, Math.max(0, active + delta));
+        render();
+      }
+
+      prevBtn.addEventListener("click", () => go(-1));
+      nextBtn.addEventListener("click", () => go(1));
+      stage.setAttribute("tabindex", "0");
+      stage.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") go(-1);
+        if (e.key === "ArrowRight") go(1);
+      });
+
+      // swipe: threshold-based (jumps one card), not live-follow-finger, for robustness
+      let dragStartX = null;
+      stage.addEventListener("pointerdown", (e) => { dragStartX = e.clientX; });
+      stage.addEventListener("pointerup", (e) => {
+        if (dragStartX === null) return;
+        const dx = e.clientX - dragStartX;
+        dragStartX = null;
+        if (Math.abs(dx) < 40) return;
+        go(dx < 0 ? 1 : -1);
+      });
+
+      // re-mirror the layout instantly when the language toggle flips direction
+      new MutationObserver(render).observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Yara Alotaibi</title>
+  <meta name="description" content="SALAM: a bilingual RAG legal assistant. Seizable: an IEEE-published EEG seizure prediction system.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body class="lang-en">
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-mark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="8" r="3" fill="#4E7FFF"/>
+          <circle cx="8" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="32" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="20" cy="34" r="3" fill="#4E7FFF"/>
+          <path d="M20 8L8 24M20 8L32 24M8 24L20 34M32 24L20 34M20 8L20 34" stroke="#8B9EFF" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <span>Yara Alotaibi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-ar">نبذة</span></a></li>
+        <li><a href="experience.html"><span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span></a></li>
+        <li><a href="education.html"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+        <li><a href="projects.html" class="active"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث</span></a></li>
+        <li><a href="certifications.html"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+        <li><a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ar">AR</button>
+        </div>
+        <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow lang-en">Selected Work</span>
+      <span class="eyebrow lang-ar">أعمال مختارة</span>
+      <h1><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></h1>
+      <p>
+        <span class="lang-en">Click a card to see the project details.</span>
+        <span class="lang-ar">اضغط على أي بطاقة لمشاهدة تفاصيل المشروع .</span>
+      </p>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       PROJECT GRID — each .project-card 
+       ===================================================================== -->
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+
+        <!-- ============ Project card #1: SALAM ============ -->
+        <a href="project-salam.html" class="card project-card" data-animate>
+          <div class="thumb">
+            <img src="assets/projects/Salam%20img.png" alt="SALAM AI Legal Assistant screenshot" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="body">
+            <h3>SALAM — AI Legal Assistant</h3>
+            <p class="lang-en">Production-ready bilingual AI legal assistant for Saudi Labor Law, powered by LLMs, semantic retrieval, and a fully Dockerized RAG architecture.</p>
+            <p class="lang-ar">مساعد قانوني ذكي ثنائي اللغة لنظام العمل السعودي، جاهز لبيئات الإنتاج، يعتمد على النماذج اللغوية الكبيرة والاسترجاع الدلالي ومعمارية RAG محزّمة بالكامل باستخدام Docker.</p>
+            <div class="tags">
+              <span class="chip">LLM</span>
+              <span class="chip">RAG</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Azure</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- ============ Project card #2: Seizable ============ -->
+        <a href="project-seizable.html" class="card project-card" data-animate>
+          
+          <div class="thumb">
+            <img src="assets/projects/Seizable%20img.png" alt="Seizable screenshot" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+
+          <div class="body">
+            <h3>Seizable — EEG epileptic Seizure Prediction</h3>
+            <p class="lang-en">A hybrid CNN-TCN deep learning system predicting epileptic seizures from EEG signals — 99.49% accuracy, published in IEEE AMLDS 2025.</p>
+            <p class="lang-ar">نظام تعلم عميق هجين (CNN-TCN) للتنبؤ بنوبات الصرع من إشارات EEG — بدقة ٩٩.٤٩٪، ومنشور في مؤتمر IEEE AMLDS 2025.</p>
+            <div class="tags">
+              <span class="chip">Deep Learning</span>
+              <span class="chip">Signal Processing</span>
+              <span class="chip">Flask</span>
+              <span class="chip">Plotly</span>
+              <span class="chip">PyEDFlib</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="lang-en">© 2026 Yara Alotaibi — Applied AI Engineer.</p>
+      <p class="lang-ar">© 2026 يارا العتيبي — مهندسة ذكاء اصطناعي تطبيقي.</p>
+    </div>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

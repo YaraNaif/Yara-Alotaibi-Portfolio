@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- lang/dir get overwritten instantly by js/language.js on load; these are just safe fallbacks -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yara Alotaibi — Applied AI Engineer</title>
+  <meta name="description" content="Yara Alotaibi — Applied AI Engineer building end-to-end AI systems: LLMs, RAG, and production MLOps.">
+
+  <!-- Google Fonts: Space Grotesk (EN headings), Inter (EN body), Tajawal (AR) — matches --font-* tokens in style.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<!-- body starts with class="lang-en" as a no-flash default; js/language.js swaps it on load if AR was saved -->
+<body class="lang-en">
+  
+
+
+
+  <!-- =====================================================================
+       SITE NAVIGATION 
+       ===================================================================== -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-mark">
+        <!-- Static "Neuro symbol" the version of the animated
+             network drawn live in js/particles.js on this hero and on about.html -->
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="8" r="3" fill="#4E7FFF"/>
+          <circle cx="8" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="32" cy="24" r="3" fill="#8B6BFF"/>
+          <circle cx="20" cy="34" r="3" fill="#4E7FFF"/>
+          <path d="M20 8L8 24M20 8L32 24M8 24L20 34M32 24L20 34M20 8L20 34" stroke="#8B9EFF" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <span>Yara Alotaibi</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-ar">نبذة</span></a></li>
+        <li><a href="experience.html"><span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span></a></li>
+        <li><a href="education.html"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+        <li><a href="projects.html"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+        <li><a href="publications.html"><span class="lang-en">Publications</span><span class="lang-ar">الأبحاث</span></a></li>
+        <li><a href="certifications.html"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+        <li><a href="skills.html"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ar">التواصل</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <!-- language toggle  -->
+        <div class="lang-toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="ar">AR</button>
+        </div>
+        <!-- mobile hamburger — js/main.js toggles -->
+        <button class="nav-toggle-btn" id="navToggleBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =====================================================================
+       HERO 
+       ===================================================================== -->
+  <header class="hero">
+    <!-- animated neuro-network background, powered by js/particles.js.
+         data-node-count / data-speed / data-link-distance tune density —
+         kept sparse here since real content sits on top of it. -->
+
+    <canvas id="neuro-canvas" data-neuro data-node-count="55" data-speed="0.25" data-link-distance="150"></canvas>
+
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="lang-en">Applied AI Engineer</span>
+          <span class="lang-ar">مهندسة ذكاء اصطناعي تطبيقي</span>
+        </span>
+
+        <!-- main headline -->
+        <h1>
+          <span class="lang-en">Engineering end-to-end <span class="accent">AI systems</span> for real-world applications</span>
+          <span class="lang-ar">أهندس <span class="accent">أنظمة ذكاء اصطناعي متكاملة</span> للتطبيق الفعلي والنشر </span>
+        </h1>
+
+        <!-- sub-paragraph  -->
+        <p class="sub">
+          <span class="lang-en">AI Engineer specializing in Machine Learning, Deep Learning, LLMs, Retrieval-Augmented Generation (RAG), and MLOps. Designing, building, and deploying scalable AI applications for production environments.</span>
+          <span class="lang-ar">مهندسة ذكاء اصطناعي متخصصة في التعلم الآلي، والتعلم العميق، والنماذج اللغوية الكبيرة (LLMs)، RAG، وMLOps. أصمم وأطوّر وأنشر تطبيقات ذكاء اصطناعي قابلة للتوسع وجاهزة لبيئات الإنتاج.</span>
+        </p>
+
+        <!-- role chips -->
+        <div class="roles">
+          <span class="chip lang-en">LLMs &amp; Generative AI</span>
+          <span class="chip lang-ar">النماذج اللغوية الكبيرة والذكاء التوليدي</span>
+          <span class="chip lang-en">Retrieval-Augmented Generation</span>
+          <span class="chip lang-ar">RAG</span>
+          <span class="chip lang-en">MLOps &amp; Deployment</span>
+          <span class="chip lang-ar">MLOps والنشر</span>
+          <span class="chip lang-en">Deep Learning</span>
+          <span class="chip lang-ar">التعلم العميق</span>
+        </div>
+
+        <!-- view projects -->
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">
+            <span class="lang-en"> See my work </span>
+            <span class="lang-ar">شاهد أعمالي</span>
+          </a>
+          <a href="assets/documents/Yara%20Naif%20Alotaibi%20AI%20Engineer%20CV.pdf" class="btn btn-ghost" download>
+            <span class="lang-en">Download CV</span>
+            <span class="lang-ar">تنزيل السيرة الذاتية</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="line"></span>
+      <span class="lang-en">Scroll</span>
+      <span class="lang-ar">مرر للأسفل</span>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       FOOTER 
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="lang-en">© 2026 Yara Alotaibi — Applied AI Engineer.</p>
+      <p class="lang-ar">© 2026 يارا العتيبي — مهندسة ذكاء اصطناعي تطبيقي.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/language.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+</body>
+</html>
